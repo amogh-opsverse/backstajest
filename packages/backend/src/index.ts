@@ -77,6 +77,7 @@ async function main() {
     logger: getRootLogger(),
   });
   const createEnv = makeCreateEnv(config);
+  console.log("config value", config);
 
   const catalogEnv = useHotMemoize(module, () => createEnv('catalog'));
   const scaffolderEnv = useHotMemoize(module, () => createEnv('scaffolder'));
