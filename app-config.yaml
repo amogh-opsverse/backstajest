@@ -1,5 +1,5 @@
 app:
-  title: Scaffolded Backstage App
+  title: Backstage App
   baseUrl: http://localhost:3000
 
 organization:
@@ -40,7 +40,7 @@ integrations:
       # This is a Personal Access Token or PAT from GitHub. You can find out how to generate this token, and more information
       # about setting up the GitHub integration here: https://backstage.io/docs/getting-started/configuration#setting-up-a-github-integration
       #token: ${GITHUB_TOKEN}
-      token: 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
+      token: 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
     ### Example for how to add your GitHub Enterprise instance using the API:
     # - host: ghe.example.net
     #   apiBaseUrl: https://ghe.example.net/api/v3
@@ -70,8 +70,8 @@ auth:
   providers: 
     github:
       development:
-        clientId: 91a2e164db8b290d884d
-        clientSecret: 45597f77266d723c061737304f97d9754e76290d
+        clientId: ${AUTH_GITHUB_CLIENT_ID}
+        clientSecret:  ${AUTH_GITHUB_CLIENT_SECRET}
 
 scaffolder:
   # see https://backstage.io/docs/features/software-templates/configuration for software template options
